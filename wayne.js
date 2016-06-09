@@ -69,14 +69,14 @@ answers[7] = 1;
 
 
 var images = new Array();
-images[0] = 'britney-spears.png'; //done
-images[1] = 'daniel-powter.jpg'; //done
-images[2] = 'christina-perri.jpg'; //done
-images[3] = 'aladdin.jpg'; //done
-images[4] = 'john-legend.jpg'; //done
-images[5] = 'coldplay.jpg'; //done
-images[6] = 'taylor-swift.jpg'; //done
-images[7] = 'michael-jackson.jpg'; //done
+images[0] = 'images/britney-spears.png';
+images[1] = 'images/daniel-powter.jpg';
+images[2] = 'images/christina-perri.jpg';
+images[3] = 'images/aladdin.jpg';
+images[4] = 'images/john-legend.jpg';
+images[5] = 'images/coldplay.jpg';
+images[6] = 'images/taylor-swift.jpg';
+images[7] = 'images/michael-jackson.jpg';
 
 var currentPlayer = 1;
 var currentQn = 0;
@@ -116,7 +116,7 @@ function winner() {
   if (whoWon() === 2) return "Player 2 Wins!";
   else return "It is a tie!";
 }
-  
+
 
 function numberOfQuestions () {
   return questions.length;
