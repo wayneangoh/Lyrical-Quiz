@@ -56,7 +56,6 @@ choices[5] = ['Tell me you love me', 'And ask me your questions', 'Running in ci
 choices[6] = ['You go talk to your friends, talk to my friends, talk to me', 'Don\'t go talk to your friends, not to my friends, not to me', 'You go talk to your friends, talk to my friends, don\'t talk to me', 'You go talk to my friends, talk to your friends, talk to me'];
 choices[7] = ['She\'s just a girl who claims that I am number one', 'She\'s just a girl who claims that I am the one', 'She is a girl who says that I am the one', 'She\'s just a girl that claims that I am the one'];
 
-
 var answers = new Array();
 answers[0] = 1;
 answers[1] = 1;
@@ -66,7 +65,6 @@ answers[4] = 2;
 answers[5] = 1;
 answers[6] = 0;
 answers[7] = 1;
-
 
 var images = new Array();
 images[0] = 'images/britney-spears.png';
@@ -111,12 +109,11 @@ function whoWon () {
 // // to return 2 at the end of the game
 //
 
-function winner() {
-  if (whoWon() === 1) return "Player 1 Wins!";
-  if (whoWon() === 2) return "Player 2 Wins!";
-  else return "It is a tie!";
+function winner () {
+  if (whoWon() === 1) return 'Player 1 Wins!';
+  if (whoWon() === 2) return 'Player 2 Wins!';
+  else return 'It is a tie!';
 }
-
 
 function numberOfQuestions () {
   return questions.length;
@@ -171,35 +168,3 @@ function playTurn (choice) {
     return false;
   }
 }
-
-//  if (isGameOver() === true) {
-//    return
-//  } else if (choice === answers[currentQuestion()]) {
-//    console.log("correct answer")
-//    // console.log(choice, answers[currentQuestion()])
-//    if (currentPlayer === 1) {
-//      player1Score++
-//      currentPlayer = 2
-//      currentQn++
-//      // console.log('player 1', player1Score)
-//    } else {
-//      player2Score++
-//      currentPlayer = 1
-//      currentQn++
-//    }
-//      // console.log('player 2', player2Score)
-//    return true
-//  }
-//  if (choice !== answers[currentQuestion()]) {
-//    console.log("wrong answer")
-//    if (currentPlayer === 1) {
-//      currentPlayer = 2
-//      currentQn++
-//    } else {
-//      if (currentPlayer === 2) {
-//        currentPlayer = 1
-//        currentQn++
-//      }
-//    } return false
-//  }
-// }

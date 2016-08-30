@@ -193,3 +193,9 @@ p {
   overflow: hidden;
   border-radius: 1%;
 }
+
+@media only screen and (max-width:500px) {
+    .choicecontainer {
+        flex-direction: column;
+        display: flex;
+    }
